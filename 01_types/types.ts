@@ -57,3 +57,10 @@ function multiply(numA: number, numB:number):number{
 }
 
 console.info(multiply(1, 2))
+
+//type function
+
+let calculation: (nA:number, nB:number) => number
+calculation = multiply
+
+calculation(10,10)

@@ -43,3 +43,7 @@ function multiply(numA, numB) {
     return numA * numB;
 }
 console.info(multiply(1, 2));
+//type function
+var calculation;
+calculation = multiply;
+calculation(10, 10);
