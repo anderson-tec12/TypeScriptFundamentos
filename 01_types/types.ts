@@ -1,33 +1,33 @@
 //string
 const Name: string = 'João'
-console.info(Name)
+console.info("STRING", Name)
 
 
 //Number
 let Age: number = 27
-console.info(Age)
+console.info("Number", Age)
 
 Age = 27.6
-console.info(Age)
+console.info("Broken Number",Age)
 
 
 //boolean
 let haveHobbies:boolean = false
-console.info(haveHobbies)
+console.info("Boolean",haveHobbies)
 
 //tipos explicitos || any
 let myAge: any
 myAge = 27
 myAge = '27'
-console.info(myAge)
+console.info("Any", myAge)
 
 //array
 let hobbies:string[] = ["Play Guitar", "Write Codes"]
-console.info(hobbies)
+console.info("Array",hobbies)
 
 //tuples
 const address: [string, number] = ["Av central", 74]
-console.log(address)
+console.log("Tumples",address)
 
 //enums
 enum Color{
@@ -37,17 +37,17 @@ enum Color{
 }
 
 let myColor: Color = Color.Blue;
-console.info(myColor)
+console.info("ENUMS",myColor)
 
 //return from function type string
 function returnName():string{
   return Name
 }
 
-console.info(returnName())
+console.info("Returns a typed value of a function",returnName())
 
 function sayIt():void{
-  console.info('Info')
+  console.info("Void", 'Info')
 }
 
 sayIt()
@@ -56,7 +56,7 @@ function multiply(numA: number, numB:number):number{
   return numA * numB
 }
 
-console.info(multiply(1, 2))
+console.info("Parameters is typed", multiply(1, 2))
 
 //type function
 
@@ -64,3 +64,35 @@ let calculation: (nA:number, nB:number) => number
 calculation = multiply
 
 calculation(10,10)
+
+//Objects
+let user: {name:string, age: number} = {
+  name: 'Anderson',
+  age: 27
+}
+
+console.info(user)
+
+//challenge one
+
+/*
+  create a functional object with:
+    array of strings with the names of the supervisors
+    function named dot which should receive an hour and return an astring
+    -> normal point (<= 8)
+    -> out of hours ( > 8)
+*/
+const verifyDot = (hours  = 8): string => {
+  if(hours > 8){
+    return `out of hours ( > 8)`
+  }
+
+  return `normal point (<= 8)`
+}
+
+const employee: {supervisorsNames: string[], dot: string } = {
+  supervisorsNames: ['Ana', 'Carol', 'Felipe', 'Diego'],
+  dot: verifyDot(8)
+}
+
+console.info(employee)
