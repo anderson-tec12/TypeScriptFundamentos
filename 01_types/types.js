@@ -61,3 +61,7 @@ var employeeTwo = {
 };
 var note = 10;
 console.info(note);
+function bug(msg) {
+    throw new Error(msg);
+}
+bug('Erros is defined');

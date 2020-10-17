@@ -108,3 +108,10 @@ let employeeTwo:employee = {
 //Union Types
 let note: number | null | string= 10
 console.info(note)
+
+//never
+function bug(msg: string):never{
+  throw new Error(msg)
+}
+
+bug('Erros is defined')
