@@ -104,3 +104,7 @@ let employeeTwo:employee = {
   supervisorsNames: ['Ana', 'Carol'],
   dot: verifyDot(9)
 }
+
+//Union Types
+let note: number | null | string= 10
+console.info(note)

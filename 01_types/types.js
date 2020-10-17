@@ -59,3 +59,5 @@ var employeeTwo = {
     supervisorsNames: ['Ana', 'Carol'],
     dot: verifyDot(9)
 };
+var note = 10;
+console.info(note);
