@@ -15,7 +15,7 @@ console.info(Age)
 let haveHobbies:boolean = false
 console.info(haveHobbies)
 
-//tipos explicitos
+//tipos explicitos || any
 let myAge: any
 myAge = 27
 myAge = '27'
@@ -25,6 +25,17 @@ console.info(myAge)
 let hobbies:string[] = ["Play Guitar", "Write Codes"]
 console.info(hobbies)
 
-//tuplas
+//tuples
 const address: [string, number] = ["Av central", 74]
 console.log(address)
+
+//enums
+enum Color{
+  Silver, //0
+  Green, //1
+  Blue //2
+}
+
+let myColor: Color = Color.Blue;
+console.info(myColor)
+
