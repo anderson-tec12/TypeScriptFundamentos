@@ -39,3 +39,21 @@ enum Color{
 let myColor: Color = Color.Blue;
 console.info(myColor)
 
+//return from function type string
+function returnName():string{
+  return Name
+}
+
+console.info(returnName())
+
+function sayIt():void{
+  console.info('Info')
+}
+
+sayIt()
+
+function multiply(numA: number, numB:number):number{
+  return numA * numB
+}
+
+console.info(multiply(1, 2))

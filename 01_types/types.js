@@ -30,3 +30,16 @@ var Color;
 })(Color || (Color = {}));
 var myColor = Color.Blue;
 console.info(myColor);
+//return from function type string
+function returnName() {
+    return Name;
+}
+console.info(returnName());
+function sayIt() {
+    console.info('Info');
+}
+sayIt();
+function multiply(numA, numB) {
+    return numA * numB;
+}
+console.info(multiply(1, 2));
