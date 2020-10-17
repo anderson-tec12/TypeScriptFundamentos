@@ -55,3 +55,7 @@ var employee = {
     dot: verifyDot(8)
 };
 console.info(employee);
+var employeeTwo = {
+    supervisorsNames: ['Ana', 'Carol'],
+    dot: verifyDot(9)
+};

@@ -96,3 +96,11 @@ const employee: {supervisorsNames: string[], dot: string } = {
 }
 
 console.info(employee)
+
+
+//ALias
+type employee = {supervisorsNames: string[], dot: string }
+let employeeTwo:employee = {
+  supervisorsNames: ['Ana', 'Carol'],
+  dot: verifyDot(9)
+}
