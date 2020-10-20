@@ -65,3 +65,4 @@ function bug(msg) {
     throw new Error(msg);
 }
 bug('Erros is defined');
+//# sourceMappingURL=types.js.map
