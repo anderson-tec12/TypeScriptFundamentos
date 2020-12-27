@@ -42,3 +42,8 @@ var funcaoComThisArrow = function () {
 };
 funcaoComThis();
 funcaoComThisArrow();
+function contagemRegressiva(inicio) {
+    if (inicio === void 0) { inicio = 3; }
+    console.log('Iniciando ', inicio);
+}
+contagemRegressiva();

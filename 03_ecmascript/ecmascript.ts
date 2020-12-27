@@ -55,3 +55,9 @@ function funcaoComThis(){
 
 funcaoComThis()
 funcaoComThisArrow()
+
+function contagemRegressiva(inicio:number = 3 ):void {
+  console.log('Iniciando ', inicio)
+}
+
+contagemRegressiva()
