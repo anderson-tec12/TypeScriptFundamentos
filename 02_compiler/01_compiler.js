@@ -1,4 +1,4 @@
 "use strict";
-var chanel = "Gaveta";
-var subscribers = 610234;
+let chanel = "Gaveta";
+let subscribers = 610234;
 //# sourceMappingURL=01_compiler.js.map

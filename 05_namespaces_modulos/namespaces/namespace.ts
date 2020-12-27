@@ -1,17 +1,23 @@
-namespace Areas{
+///<reference path="testeDeReferencia.ts" />
 
-  const P1 = 3.14
-  
-  export function Circunferencia(raio:number):number{
-    return P1 * Math.pow(raio, 2)
-  }
-  
-  
-  export function Retangulo(base:number, altura:number):number{
-    return base * altura
+namespace Dev{
+  export namespace Areas{
+
+    const P1 = 3.14
+    
+    export function Circunferencia(raio:number):number{
+      return P1 * Math.pow(raio, 2)
+    }
+    
+    
+    export function Retangulo(base:number, altura:number):number{
+      return base * altura
+    }
   }
 }
 
+const {Circunferencia,Retangulo} = Dev.Areas
 
-console.log(Areas.Circunferencia(10))
-console.log(Areas.Retangulo(10, 20))
+console.log(Dev.Areas.Circunferencia(10))
+OPS()
+console.log(Dev.Areas.Retangulo(10, 20))
