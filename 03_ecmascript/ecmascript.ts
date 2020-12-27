@@ -61,3 +61,31 @@ function contagemRegressiva(inicio:number = 3 ):void {
 }
 
 contagemRegressiva()
+
+// Rest & Spread
+
+const numbers  = [1,10,99, -5 ]
+
+console.log('Maior Numero', Math.max(...numbers)) //Spread
+
+// Rest
+function retonarArray(arg1:number, arg2: number, ...args:number[]):number []{
+  return [ arg1,arg2, ...args]
+}
+
+console.log(retonarArray(20,30,40,50,60,70,80,90,100))
+
+// REST, SPREAD (Tupla)
+const Tupla:[number,string,boolean] = [1,'abc', false]
+
+function tuplaParam1(a:number, b:string, c:boolean):void{
+  console.log(a,b,c)
+}
+
+tuplaParam1(...Tupla)
+
+function tuplaParam2(...paramns:[number,string,boolean]):void{
+  console.log(...paramns)
+}
+
+tuplaParam2(...Tupla)
