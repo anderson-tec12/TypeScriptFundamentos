@@ -1,2 +1,2 @@
 # TypeScriptFundamentos
-Estudandos os fundmentos do typeScript
+Os fundamentos do typeScript
