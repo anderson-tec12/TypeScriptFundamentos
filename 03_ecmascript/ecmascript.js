@@ -80,3 +80,7 @@ function tuplaParam2() {
     console.log.apply(console, paramns);
 }
 tuplaParam2.apply(void 0, Tupla);
+// Destructuring (array)
+var caracteristicas = ['motor 1.8', 2020];
+var motor = caracteristicas[0], ano = caracteristicas[1];
+console.log(motor, ano);
