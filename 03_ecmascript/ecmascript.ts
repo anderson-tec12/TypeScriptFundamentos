@@ -29,3 +29,29 @@ for(var i = 0 ; i <= 10; i ++){
 }
 
 console.log(i)
+
+// Arrow function
+const somar = (n1: number, n2:number):number => {
+  return n1 + n2
+}
+
+const subtrair = (n1: number, n2:number):number =>  n1 - n2
+
+const saudacao = ({age, name}:{name:string, age:number}):string  => {
+  return `Olá eu me chamo  ${name}, tenho ${age} anos`
+}
+
+somar(2,2)
+console.log(subtrair(somar(2,2), 3))
+console.log(saudacao({age:28,name:'Anderson B Silva'}))
+
+function funcaoComThis(){
+  console.log('THIS NORMAL', this)
+}
+
+ const funcaoComThisArrow = () => {
+  console.log('THIS Arraw', this)
+}
+
+funcaoComThis()
+funcaoComThisArrow()
