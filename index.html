@@ -7,10 +7,24 @@
     <title>TypeScript</title>
 </head>
 <body>
+    <script src="node_modules/systemjs/dist/system.js"></script>
     <!-- <script src="00_Introducao/basico.js"></script>
     <script src="01_types/types.js"></script>
     <script src="02_compiler/01_compiler.js"></script> -->
     <!-- <script src="03_ecmascript/ecmascript.js"></script> -->
-    <script src="05_namespaces_modulos//namespaces/namespace.js"></script>
+    <!-- <script src="05_namespaces_modulos/namespaces/namespace.js"></script> -->
+    <!-- <script src="05_namespaces_modulos/modulos/modulo.js"></script> -->
+    <script>
+        SystemJS.config({
+            baseUrl:"/modulos",
+            package:{
+                '/modulos':{
+                    defaultJSExtension:true
+                }
+            }
+        })
+
+        SystemJS.import('./05_namespaces_modulos/modulos/modulo.js')
+    </script>
 </body>
 </html>

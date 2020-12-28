@@ -1,4 +1,5 @@
 "use strict";
+///<reference path="testeDeReferencia.ts" />
 var Dev;
 (function (Dev) {
     let Areas;
@@ -16,5 +17,6 @@ var Dev;
 })(Dev || (Dev = {}));
 const { Circunferencia, Retangulo } = Dev.Areas;
 console.log(Dev.Areas.Circunferencia(10));
+OPS();
 console.log(Dev.Areas.Retangulo(10, 20));
 //# sourceMappingURL=namespace.js.map
